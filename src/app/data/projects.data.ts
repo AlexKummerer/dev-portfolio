@@ -26,7 +26,8 @@ export const PROJECTS: Project[] = [
   {
     id: 'qr-shortlinker',
     title: 'QR-Shortlinker — URL-Shortener & QR-Code-Manager',
-    description: $localize`:@@project.qrshortlinker.desc:Ein Full-Stack-Tool zum Kürzen von URLs und Generieren von QR-Codes. Das Angular-Frontend bietet ein übersichtliches Dashboard zur Verwaltung aller Links, während das FastAPI-Backend die Logik übernimmt. Gehostet auf Cloudflare.`,
+    description:
+      'Ein Full-Stack-Tool zum Kürzen von URLs und Generieren von QR-Codes. Das Angular-Frontend bietet ein übersichtliches Dashboard zur Verwaltung aller Links, während das FastAPI-Backend die Logik übernimmt. Gehostet auf Cloudflare.',
     technologies: [
       'Angular',
       'FastAPI',
