@@ -64,6 +64,7 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
+
     providePrimeNG({
       theme: {
         preset: PortfolioPreset,
