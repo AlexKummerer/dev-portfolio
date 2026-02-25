@@ -1,1 +1,12 @@
-<p>navbar works!</p>
+<p-toolbar [ngClass]="{ 'navbar-scrolled': scrolled() }">
+  <ng-template #start>
+    <img src="logo.png" alt="AK Logo" />
+  </ng-template>
+  <ng-template #end>
+    <a href="#hero">Hero</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projekte</a>
+    <a href="#contact">Kontakte</a>
+  </ng-template>
+</p-toolbar>
