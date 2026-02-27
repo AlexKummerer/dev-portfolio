@@ -1,1 +1,6 @@
-<p>theme-toggle works!</p>
+<p-button
+  [icon]="darkMode() ? 'pi pi-moon': 'pi pi-sun' "
+  [rounded]="true"
+  [text]="true"
+  (onClick)="toggle()"
+/>

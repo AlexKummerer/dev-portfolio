@@ -6,7 +6,7 @@
   z-index: 1000;
 }
 
-:host ::ng-deep .navbar-scrolled {
+:host .navbar-scrolled {
   background: color-mix(in srgb, var(--p-surface-0) 90%, transparent);
   backdrop-filter: blur(20px) saturate(180%);
   border-bottom: 1px solid rgba(148, 163, 184, 0.1);
@@ -20,13 +20,13 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--p-text-color);
+  color: var(--p-button-link-color) !important;
   font-weight: 500;
   font-size: 14px;
   padding: 8px 16px;
   transition: color 0.2s ease;
 
   &:hover {
-    color: var(--p-primary-color);
+    color: var(--p-button-link-hover-color);
   }
 }
