@@ -1,5 +1,5 @@
 section {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,6 +95,11 @@ section {
   }
 
   50% {
-    transform: translateY(-12px);
+    transform: translateY(12px);
   }
+}
+
+.hero-animate {
+  opacity: 0;
+  transform: translateY(40px);
 }
