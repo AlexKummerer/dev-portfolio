@@ -1,0 +1,36 @@
+
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.photo-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 2rem;
+  background: var(--p-surface-200);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+
+  p {
+    color: var(--p-text-muted-color);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

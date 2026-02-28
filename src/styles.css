@@ -37,16 +37,31 @@ code, .font-mono {
 }
 
 h1 {
-  font-size: clamp(42px, 6vw, 72px);
+  font-size: clamp(2.625rem, 6vw, 4.5rem);
   font-weight: 800;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
 main {
-  padding-top: 64px;
+  padding-top: 4rem;
+}
+
+section {
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+  padding: var(--section-padding)
+}
+
+.section-label {
+  display: block;
+  color: var(--p-primary-color);
+  font-size: var(--section-label-size);
+  font-weight: 600;
+  letter-spacing: var(--section-label-spacing);
+  margin-bottom: 0.5rem;
 }

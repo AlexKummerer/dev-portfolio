@@ -8,13 +8,13 @@
 
 :host .navbar-scrolled {
   background: color-mix(in srgb, var(--p-surface-0) 90%, transparent);
-  backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(1.25rem) saturate(180%);
   border-bottom: 1px solid rgba(148, 163, 184, 0.1);
 }
 
 
 img {
-  height: 40px;
+  height: 2.5rem;
   width: auto;
 }
 
@@ -22,8 +22,8 @@ a {
   text-decoration: none;
   color: var(--p-button-link-color) !important;
   font-weight: 500;
-  font-size: 14px;
-  padding: 8px 16px;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
   transition: color 0.2s ease;
 
   &:hover {
