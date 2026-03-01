@@ -1,0 +1,90 @@
+<div class="timeline-wrapper">
+  <button class="nav-arrow nav-left" (click)="scroll('left')" aria-label="Zurück scrollen">
+    <i class="pi pi-chevron-left"></i>
+  </button>
+
+  <button class="nav-arrow nav-right" (click)="scroll('right')" aria-label="Vorwärts scrollen">
+    <i class="pi pi-chevron-right"></i>
+  </button>
+
+  <div class="fade-left"></div>
+  <div class="fade-right"></div>
+
+  <div class="scroll-container" #scrollContainer>
+    <div class="timeline-track">
+      <div class="center-line"></div>
+      @for (entry of entries; track entry.period; let i = $index) {
+      <div class="timeline-item" [class.above]="i % 2 === 0" [class.below]="i % 2 !== 0">
+        <div class="connector" [style.background]="typeColors[entry.type]"></div>
+        <div class="timeline-dot" [style.border-color]="typeColors[entry.type]"></div>
+
+        <div
+          class="timeline-card"
+          #card
+          [style.border-color]="typeColors[entry.type]"
+          (mousemove)="onCardMouseMove($event, card)"
+          (mouseleave)="onCardMouseLeave(card)"
+          (click)="selectEntry(entry)"
+        >
+          <div class="card-header">
+            <span class="type-icon">{{ typeIcons[entry.type] }} </span>
+            <span class="type-label" [style.color]="typeColors[entry.type]">
+              {{ typeLabels[entry.type] }}
+            </span>
+          </div>
+          <h4 class="card-title">{{ entry.title }}</h4>
+          <p class="card-company">{{ entry.company }}</p>
+          <p class="card-period">{{ entry.period }}</p>
+          @if(entry.current) {
+          <span class="current-badge" i18n>Aktuell</span>
+          }
+        </div>
+      </div>
+
+      }
+    </div>
+  </div>
+</div>
+
+@if (selectedEntry(); as entry) {
+<div class="detail-overlay" (click)="closeDetail()">
+  <div class="detail-panel" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="closeDetail()" aria-label="Schließen">
+      <i class="pi pi-times"></i>
+    </button>
+
+    <div class="detail-header" [style.border-left-color]="typeColors[entry.type]">
+      <span class="type-icon-lg">{{ typeIcons[entry.type] }}</span>
+      <div>
+        <h3>{{ entry.title }}</h3>
+        <p class="detail-company">{{ entry.company }}</p>
+        <p class="detail-period">{{ entry.period }}</p>
+      </div>
+    </div>
+
+    @if (entry.description) {
+    <p class="detail-description">{{ entry.description }}</p>
+    } @if (entry.techStack) {
+    <div class="detail-techstack">
+      <h4 i18n>Tech Stack</h4>
+      <div class="tech-tags">
+        @for (tech of entry.techStack; track tech) {
+        <span class="tech-tag" [style.border-color]="typeColors[entry.type]">{{ tech }}</span>
+        }
+      </div>
+    </div>
+    } @if (entry.companyUrl) {
+    <a
+      [href]="entry.companyUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="company-link"
+      [style.color]="typeColors[entry.type]"
+    >
+      <i class="pi pi-external-link"></i>
+      <span i18n>Website besuchen</span>
+    </a>
+    }
+  </div>
+</div>
+}
