@@ -1,1 +1,36 @@
-<p>skills works!</p>
+<section>
+  <span class="section-label" i18n>Tech Stack</span>
+  <h2 i18n>Skills & technologien</h2>
+  <div class="bento-grid">
+    @for (category of categories; track category.name; let i = $index) {
+    <div class="bento-card" [class]="'bento-card card-' + i">
+      <div class="card-icon" [style.color]="categoryColors[category.name]">
+        <i [class]="categoryIcons[category.name]"></i>
+      </div>
+      <h3 class="card-name">{{ category.name }}</h3>
+      <div class="core-skills">
+        @for (skill of category.coreSkills; track skill) {
+        <span class="skill-tag core" [style.border-color]="categoryColors[category.name]">{{
+          skill
+        }}</span>
+
+        }
+      </div>
+      @if (category.otherSkills.length > 0) {
+      <div class="other-skills">
+        <span class="other-label" i18n>Weitere Erfahrung
+        </span>
+        <div class="other-tags">
+          @for (skill of category.otherSkills; track skill) {
+          <span class="skill-tag other">{{ skill }}</span>
+
+          }
+        </div>
+      </div>
+
+      }
+    </div>
+
+    }
+  </div>
+</section>

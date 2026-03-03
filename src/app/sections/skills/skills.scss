@@ -1,0 +1,90 @@
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.card-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+
+
+.bento-card {
+  background: var(--p-surface-800);
+  border: 1px solid var(--p-surface-700);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.core-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+
+  &.core {
+    border: 1px solid;
+    color: inherit; // Nimmt die Farbe vom [style.border-color]
+    font-weight: 500;
+  }
+
+  &.other {
+    border: 1px solid var(--p-surface-200);
+    color: var(--p-text-muted-color);
+    background: transparent;
+    font-size: 0.75rem;
+  }
+}
+
+
+.other-skills {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--p-surface-200);
+}
+
+.other-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--p-text-muted-color);
+  margin-bottom: 0.5rem;
+}
+
+.other-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-0 {
+    grid-row: auto;
+  }
+}

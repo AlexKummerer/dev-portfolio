@@ -49,6 +49,7 @@ h2 {
 
 main {
   padding-top: 4rem;
+  background: var(--p-content-background);
 }
 
 section {
