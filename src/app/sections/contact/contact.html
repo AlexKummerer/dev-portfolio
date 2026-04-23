@@ -1,1 +1,34 @@
-<p>contact works!</p>
+<section id="contact">
+  <span class="section-label" i18n>KONTAKT</span>
+  <h2 i18n>Schreib mir</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="contact-form">
+    <p-floatlabel>
+      <input pInputText id="name" formControlName="name" autocomplete="name" />
+      <label for="name" i18n>Name</label>
+    </p-floatlabel>
+
+    <p-floatlabel>
+      <input pInputText id="email" formControlName="email" autocomplete="email" />
+      <label for="email" i18n>E-Mail</label>
+    </p-floatlabel>
+
+    <p-floatlabel>
+      <textarea pTextarea id="message" formControlName="message" rows="5" autoResize></textarea>
+      <label for="message" i18n>Nachricht</label>
+    </p-floatlabel>
+
+    <input type="text" formControlName="honeypot" class="hp" tabindex="-1" autocomplete="off" />
+
+    <p-button
+      type="submit"
+      [label]="sent() ? 'Gesendet ✓' : 'Nachricht senden'"
+      [icon]="sending() ? 'pi pi-spinner pi-spin' : sent() ? 'pi pi-check' : 'pi pi-send'"
+      [disabled]="sending()"
+      [severity]="sent() ? 'success' : 'primary'"
+      i18n-label
+    />
+  </form>
+
+  <p-toast />
+</section>
