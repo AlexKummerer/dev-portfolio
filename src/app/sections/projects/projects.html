@@ -2,8 +2,14 @@
   <span class="section-label" i18n>PROJEKTE</span>
   <h2 i18n>Meine Projekte</h2>
 
-  <div class="projects-grid">
-    @for (project of projects; track project.id) {
+  <div class="projects-grid projects-grid--top">
+    @for (project of projects.slice(0, 2); track project.id) {
+    <app-project-card [project]="project" />
+    }
+  </div>
+
+  <div class="projects-grid projects-grid--bottom">
+    @for (project of projects.slice(2); track project.id) {
     <app-project-card [project]="project" />
     }
   </div>
