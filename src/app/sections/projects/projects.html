@@ -1,1 +1,10 @@
-<p>projects works!</p>
+<section id="projects">
+  <span class="section-label" i18n>PROJEKTE</span>
+  <h2 i18n>Meine Projekte</h2>
+
+  <div class="projects-grid">
+    @for (project of projects; track project.id) {
+    <app-project-card [project]="project" />
+    }
+  </div>
+</section>

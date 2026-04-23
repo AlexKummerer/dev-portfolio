@@ -21,7 +21,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     name: 'Backend & Daten',
-    coreSkills: ['Python', 'FastAPI', 'SQL', 'SQLite', 'REST APIs', 'MongoDB'],
+    coreSkills: ['Python', 'FastAPI', 'SQL', 'SQLite', 'REST APIs', 'MongoDB', 'NodeJS'],
     otherSkills: ['Selenium/pytest', 'OOP'],
   },
   {

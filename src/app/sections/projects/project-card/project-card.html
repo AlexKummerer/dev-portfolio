@@ -1,0 +1,35 @@
+<article class="card" [style.--project-color]="project().color">
+  <div class="card_header">
+    <h3 class="card__title">
+      {{ project().title }}
+    </h3>
+    <span class="card__status" [ngClass]="statusConfig().class">
+      {{ statusConfig().label }}
+    </span>
+  </div>
+
+  <div class="card__body">
+    <p class="card__description">{{ project().description }}</p>
+  </div>
+  <div class="card__tags">
+    @for (tech of project().technologies; track tech) {
+    <span class="card__tag">{{ tech }}</span>
+    }
+  </div>
+  <div class="card__links">
+    @if (project().githubUrl) {
+    <a [href]="project().githubUrl" target="_blank" rel="noopener noreferrer" class="card__link">
+      <i class="pi pi-github"></i> GitHub
+    </a>
+    } @if (project().liveUrl) {
+    <a
+      [href]="project().liveUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="card__link card__link--live"
+    >
+      <i class="pi pi-external-link"></i> Live Demo
+    </a>
+    }
+  </div>
+</article>
