@@ -21,6 +21,16 @@
   /* Section Label */
   --section-label-size: 13px;
   --section-label-spacing: 0.12em;
+
+  /* Light mode text */
+  --p-text-color: #1A1A2E;
+  --p-text-muted-color: #64748B;
+}
+
+.p-dark {
+  /* Dark mode text */
+  --p-text-color: #E2E8F0;
+  --p-text-muted-color: #94A3B8;
 }
 
 
@@ -47,9 +57,12 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+body {
+  background: var(--p-surface-0);
+}
+
 main {
   padding-top: 4rem;
-  background: var(--p-content-background);
 }
 
 section {

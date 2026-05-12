@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de" target-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="422120872028529900" datatype="html">
+        <source>Über mich</source>
+        <target>About Me</target>
+      </trans-unit>
+      <trans-unit id="2625857399058988070" datatype="html">
+        <source>Meine Geschichte</source>
+        <target>My Story</target>
+      </trans-unit>
+      <trans-unit id="7568942013533489334" datatype="html">
+        <source> Vom Logistik-Profi zum Software-Entwickler — mein Weg war alles andere als geradlinig. Nach Jahren in der Luftfrachtlogistik habe ich meine Leidenschaft für Technologie zum Beruf gemacht. </source>
+        <target> From logistics professional to software developer — my path was anything but straightforward. After years in air freight logistics, I turned my passion for technology into a career. </target>
+      </trans-unit>
+      <trans-unit id="4786308116310173680" datatype="html">
+        <source> Heute entwickle ich moderne Webanwendungen mit Angular und Python, automatisiere Geschäftsprozesse mit KI und n8n, und bringe Unternehmen mit smarten Lösungen voran. </source>
+        <target> Today I build modern web applications with Angular and Python, automate business processes with AI and n8n, and help companies move forward with smart solutions. </target>
+      </trans-unit>
+      <trans-unit id="5142869837833158297" datatype="html">
+        <source>Aktuell</source>
+        <target>Current</target>
+      </trans-unit>
+      <trans-unit id="3836120654588644262" datatype="html">
+        <source>Tech Stack</source>
+        <target>Tech Stack</target>
+      </trans-unit>
+      <trans-unit id="638410334327223959" datatype="html">
+        <source>Website besuchen</source>
+        <target>Visit Website</target>
+      </trans-unit>
+      <trans-unit id="3526511374475876004" datatype="html">
+        <source>KONTAKT</source>
+        <target>CONTACT</target>
+      </trans-unit>
+      <trans-unit id="6379166298986823229" datatype="html">
+        <source>Schreib mir</source>
+        <target>Get in Touch</target>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="8115083664628466958" datatype="html">
+        <source>E-Mail</source>
+        <target>E-Mail</target>
+      </trans-unit>
+      <trans-unit id="5644795770167690835" datatype="html">
+        <source>Nachricht</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="396308522560726772" datatype="html">
+        <source>Verfügbar für Projekte</source>
+        <target>Available for Projects</target>
+      </trans-unit>
+      <trans-unit id="4159422374575965247" datatype="html">
+        <source>Nach oben</source>
+        <target>Back to top</target>
+      </trans-unit>
+      <trans-unit id="1547876271716599756" datatype="html">
+        <source>Impressum</source>
+        <target>Legal Notice</target>
+      </trans-unit>
+      <trans-unit id="4082114936887396529" datatype="html">
+        <source>Datenschutz</source>
+        <target>Privacy Policy</target>
+      </trans-unit>
+      <trans-unit id="2348366065908428455" datatype="html">
+        <source>© 2026 Alex Kummerer</source>
+        <target>© 2026 Alex Kummerer</target>
+      </trans-unit>
+      <trans-unit id="5067473909390350857" datatype="html">
+        <source> Ich entwickle moderne Webanwendungen und automatisiere Prozesse mit KI. Von der Idee bis zum fertigen Produkt — mit Angular, Python und smarten Lösungen. </source>
+        <target> I build modern web applications and automate processes with AI. From idea to finished product — with Angular, Python and smart solutions. </target>
+      </trans-unit>
+      <trans-unit id="6738027333882404216" datatype="html">
+        <source>Projekte ansehen</source>
+        <target>View Projects</target>
+      </trans-unit>
+      <trans-unit id="397497450705980813" datatype="html">
+        <source>Kontakt</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="3841858882084107547" datatype="html">
+        <source>PROJEKTE</source>
+        <target>PROJECTS</target>
+      </trans-unit>
+      <trans-unit id="8256081276643312627" datatype="html">
+        <source>Meine Projekte</source>
+        <target>My Projects</target>
+      </trans-unit>
+      <trans-unit id="2659914084534380426" datatype="html">
+        <source>Skills &amp; technologien</source>
+        <target>Skills &amp; Technologies</target>
+      </trans-unit>
+      <trans-unit id="8177671297003471289" datatype="html">
+        <source>Weitere Erfahrung </source>
+        <target>More Experience </target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -2,33 +2,72 @@
   <span class="section-label" i18n>KONTAKT</span>
   <h2 i18n>Schreib mir</h2>
 
-  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="contact-form">
-    <p-floatlabel>
-      <input pInputText id="name" formControlName="name" autocomplete="name" />
-      <label for="name" i18n>Name</label>
-    </p-floatlabel>
+  <div class="contact-grid">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="contact-form">
+      <p-floatlabel>
+        <input pInputText id="name" formControlName="name" autocomplete="name" />
+        <label for="name" i18n>Name</label>
+      </p-floatlabel>
 
-    <p-floatlabel>
-      <input pInputText id="email" formControlName="email" autocomplete="email" />
-      <label for="email" i18n>E-Mail</label>
-    </p-floatlabel>
+      <p-floatlabel>
+        <input pInputText id="email" formControlName="email" autocomplete="email" />
+        <label for="email" i18n>E-Mail</label>
+      </p-floatlabel>
 
-    <p-floatlabel>
-      <textarea pTextarea id="message" formControlName="message" rows="5" autoResize></textarea>
-      <label for="message" i18n>Nachricht</label>
-    </p-floatlabel>
+      <p-floatlabel>
+        <textarea pTextarea id="message" formControlName="message" rows="5" autoResize></textarea>
+        <label for="message" i18n>Nachricht</label>
+      </p-floatlabel>
 
-    <input type="text" formControlName="honeypot" class="hp" tabindex="-1" autocomplete="off" />
+      <input type="text" formControlName="honeypot" class="hp" tabindex="-1" autocomplete="off" />
 
-    <p-button
-      type="submit"
-      [label]="sent() ? 'Gesendet ✓' : 'Nachricht senden'"
-      [icon]="sending() ? 'pi pi-spinner pi-spin' : sent() ? 'pi pi-check' : 'pi pi-send'"
-      [disabled]="sending()"
-      [severity]="sent() ? 'success' : 'primary'"
-      i18n-label
-    />
-  </form>
+      <p-button
+        type="submit"
+        [label]="sent() ? 'Gesendet ✓' : 'Nachricht senden'"
+        [icon]="sending() ? 'pi pi-spinner pi-spin' : sent() ? 'pi pi-check' : 'pi pi-send'"
+        [disabled]="sending()"
+        [severity]="sent() ? 'success' : 'primary'"
+        i18n-label
+      />
+    </form>
+
+    <aside class="contact-sidebar">
+      <div class="availability">
+        <span class="availability__dot"></span>
+        <span i18n>Verfügbar für Projekte</span>
+      </div>
+
+      <div class="social-links">
+        <a
+          href="https://github.com/AlexKummerer"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-card"
+        >
+          <i class="pi pi-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a
+          href="https://linkedin.com/in/alexkummerer"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-card"
+        >
+          <i class="pi pi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a
+          href="https://xing.com/profile/alex_kummerer"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-card"
+        >
+          <i class="pi pi-briefcase"></i>
+          <span>Xing</span>
+        </a>
+      </div>
+    </aside>
+  </div>
 
   <p-toast />
 </section>

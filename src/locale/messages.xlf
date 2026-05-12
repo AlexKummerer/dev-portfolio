@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="422120872028529900" datatype="html">
+        <source>Über mich</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about/about.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2625857399058988070" datatype="html">
+        <source>Meine Geschichte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about/about.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7568942013533489334" datatype="html">
+        <source> Vom Logistik-Profi zum Software-Entwickler — mein Weg war alles andere als geradlinig. Nach Jahren in der Luftfrachtlogistik habe ich meine Leidenschaft für Technologie zum Beruf gemacht. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about/about.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4786308116310173680" datatype="html">
+        <source> Heute entwickle ich moderne Webanwendungen mit Angular und Python, automatisiere Geschäftsprozesse mit KI und n8n, und bringe Unternehmen mit smarten Lösungen voran. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about/about.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5142869837833158297" datatype="html">
+        <source>Aktuell</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about/timeline/timeline.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3836120654588644262" datatype="html">
+        <source>Tech Stack</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about/timeline/timeline.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/skills/skills.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="638410334327223959" datatype="html">
+        <source>Website besuchen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about/timeline/timeline.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3526511374475876004" datatype="html">
+        <source>KONTAKT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact/contact.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6379166298986823229" datatype="html">
+        <source>Schreib mir</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact/contact.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact/contact.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8115083664628466958" datatype="html">
+        <source>E-Mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact/contact.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5644795770167690835" datatype="html">
+        <source>Nachricht</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact/contact.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="396308522560726772" datatype="html">
+        <source>Verfügbar für Projekte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact/contact.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4159422374575965247" datatype="html">
+        <source>Nach oben</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/footer/footer.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1547876271716599756" datatype="html">
+        <source>Impressum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/footer/footer.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4082114936887396529" datatype="html">
+        <source>Datenschutz</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/footer/footer.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2348366065908428455" datatype="html">
+        <source>© 2026 Alex Kummerer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/footer/footer.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5067473909390350857" datatype="html">
+        <source> Ich entwickle moderne Webanwendungen und automatisiere Prozesse mit KI. Von der Idee bis zum fertigen Produkt — mit Angular, Python und smarten Lösungen. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/hero/hero.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6738027333882404216" datatype="html">
+        <source>Projekte ansehen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/hero/hero.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="397497450705980813" datatype="html">
+        <source>Kontakt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/hero/hero.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3841858882084107547" datatype="html">
+        <source>PROJEKTE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/projects/projects.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8256081276643312627" datatype="html">
+        <source>Meine Projekte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/projects/projects.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2659914084534380426" datatype="html">
+        <source>Skills &amp; technologien</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/skills/skills.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8177671297003471289" datatype="html">
+        <source>Weitere Erfahrung </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/skills/skills.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

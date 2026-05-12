@@ -1,15 +1,36 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.hp {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  max-width: 560px;
-  margin-top: 40px;
 
-  input,
+  input:not(.hp),
   textarea {
     width: 100%;
-    background: var(--p-surface-800);
-    border: 1px solid var(--p-surface-600);
+    background: var(--p-surface-50);
+    border: 1px solid var(--p-surface-200);
     border-radius: 12px;
     color: var(--p-text-color);
     font-family: var(--font-sans);
@@ -25,11 +46,69 @@
   }
 }
 
-.hp {
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  height: 0;
-  width: 0;
-  pointer-events: none;
+.contact-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--p-text-color);
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #10B981;
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--p-surface-50);
+  border: 1px solid var(--p-surface-200);
+  border-radius: 12px;
+  color: var(--p-text-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+
+  i {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--p-primary-color);
+    background: var(--p-surface-100);
+  }
 }

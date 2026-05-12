@@ -42,6 +42,7 @@
           },
           "configurations": {
             "production": {
+              "localize": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -60,6 +61,12 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "de": {
+              "localize": ["de"]
+            },
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -72,6 +79,12 @@
             },
             "development": {
               "buildTarget": "dev-portfolio:build:development"
+            },
+            "de": {
+              "buildTarget": "dev-portfolio:build:de"
+            },
+            "en": {
+              "buildTarget": "dev-portfolio:build:en"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,27 @@
+.lang-switch {
+  display: flex;
+  gap: 4px;
+  background: rgba(148, 163, 184, 0.06);
+  border-radius: 8px;
+  padding: 3px;
+
+  a {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--p-text-muted-color);
+    text-decoration: none;
+    transition: all 0.25s ease;
+
+    &.active {
+      background: var(--p-primary-color);
+      color: white;
+    }
+
+    &:hover:not(.active) {
+      color: var(--p-text-color);
+    }
+  }
+}

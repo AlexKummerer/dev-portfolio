@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, LOCALE_ID } from '@angular/core';
 
 @Component({
   selector: 'app-lang-switch',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './lang-switch.scss',
 })
 export class LangSwitch {
-
+  readonly currentLocale = inject(LOCALE_ID);
 }
