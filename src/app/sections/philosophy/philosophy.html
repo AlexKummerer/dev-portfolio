@@ -1,0 +1,13 @@
+<section>
+  <span class="section-label" i18n>Prinzipien </span>
+  <h2 i18n>Meine Philosophie</h2>
+  <div class="philosophy-grid">
+    @for (p of principles; track p.number; let i = $index) {
+    <div class="principle-block" [style.animation-delay]="i * 150 + 'ms'">
+      <span class="principle-number">{{ p.number }}</span>
+      <h3 class="principle-title">{{ p.title }}</h3>
+      <p class="principle-text">{{ p.text }}</p>
+    </div>
+    }
+  </div>
+</section>

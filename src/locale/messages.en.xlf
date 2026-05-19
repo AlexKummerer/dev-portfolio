@@ -98,6 +98,18 @@
         <source>Weitere Erfahrung </source>
         <target>More Experience </target>
       </trans-unit>
+        <trans-unit id="philosophy-label" datatype="html">
+    <source>Prinzipien</source>
+    <target>Principles</target>
+  </trans-unit>
+  <trans-unit id="philosophy-title" datatype="html">
+    <source>Meine Philosophie</source>
+    <target>My philosophy</target>
+  </trans-unit>
+  <trans-unit id="navbar-philosophy" datatype="html">
+    <source>Philosophie</source>
+    <target>Philosophy</target>
+  </trans-unit>
     </body>
   </file>
 </xliff>

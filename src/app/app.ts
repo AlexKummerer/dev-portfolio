@@ -7,12 +7,13 @@ import { About } from './sections/about/about';
 import { Projects } from './sections/projects/projects';
 import { Contact } from './sections/contact/contact';
 import { Footer } from './sections/footer/footer';
+import { Philosophy } from './sections/philosophy/philosophy';
 
 const BASE_URL = 'https://alexkummerer.de';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Hero, Skills, About, Projects, Contact, Footer],
+  imports: [Navbar, Hero, Skills, About, Philosophy, Projects, Contact, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
