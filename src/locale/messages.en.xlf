@@ -110,6 +110,18 @@
     <source>Philosophie</source>
     <target>Philosophy</target>
   </trans-unit>
+      <trans-unit id="3156815350118181541" datatype="html">
+        <source>Leistungen</source>
+        <target>What I do</target>
+      </trans-unit>
+      <trans-unit id="7258741978133817627" datatype="html">
+        <source>Was ich anbiete</source>
+        <target>What I offer</target>
+      </trans-unit>
+      <trans-unit id="3636530238155345165" datatype="html">
+        <source>Vier Bereiche, in denen ich messbaren Mehrwert schaffe.</source>
+        <target>Four areas where I deliver measurable value.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -1,0 +1,13 @@
+<section #section>
+  <span class="section-label" i18n>Leistungen</span>
+  <h2 i18n>Was ich anbiete</h2>
+  <p class="intro-text" i18n>Vier Bereiche, in denen ich messbaren Mehrwert schaffe.</p>
+  <div class="services-grid">
+    @for (s of services; track s.title; let i = $index) {
+    <div class="service-card" [style.animation-delay]="i * 100 + 'ms'">
+      <h3 class="service-title">{{ s.title }}</h3>
+      <p class="service-description">{{ s.description }}</p>
+    </div>
+    }
+  </div>
+</section>

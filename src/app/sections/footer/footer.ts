@@ -3,7 +3,7 @@ import { LangSwitch } from '../../components/lang-switch/lang-switch';
 
 @Component({
   selector: 'app-footer',
-  imports: [LangSwitch],
+  imports: [],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })

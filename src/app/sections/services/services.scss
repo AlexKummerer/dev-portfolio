@@ -1,0 +1,83 @@
+.intro-text {
+  font-size: 1rem;
+  color: var(--p-text-muted-color);
+  margin: 0.5rem 0 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1100px;
+  margin-top: 3rem;
+
+  @media (max-width: 880px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--p-surface-50);
+  border: 1px solid rgba(148, 163, 184, 0.08);
+  border-radius: 20px;
+  padding: 36px;
+  min-height: 200px;
+  opacity: 1;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--p-primary-color), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: color-mix(in srgb, var(--p-primary-color) 25%, transparent);
+    box-shadow: 0 20px 60px rgba(59, 130, 246, 0.08);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+.visible .service-card {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--p-text-color);
+  margin: 0;
+}
+
+.service-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--p-text-muted-color);
+  margin: 12px 0 0;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
