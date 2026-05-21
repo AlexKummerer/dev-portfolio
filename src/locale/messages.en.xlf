@@ -98,18 +98,38 @@
         <source>Weitere Erfahrung </source>
         <target>More Experience </target>
       </trans-unit>
-        <trans-unit id="philosophy-label" datatype="html">
-    <source>Prinzipien</source>
-    <target>Principles</target>
-  </trans-unit>
-  <trans-unit id="philosophy-title" datatype="html">
-    <source>Meine Philosophie</source>
-    <target>My philosophy</target>
-  </trans-unit>
-  <trans-unit id="navbar-philosophy" datatype="html">
-    <source>Philosophie</source>
-    <target>Philosophy</target>
-  </trans-unit>
+      <trans-unit id="3628669011020377339" datatype="html">
+        <source>Prinzipien </source>
+        <target>Principles </target>
+      </trans-unit>
+      <trans-unit id="4739894509039083034" datatype="html">
+        <source>Meine Philosophie</source>
+        <target>My philosophy</target>
+      </trans-unit>
+      <trans-unit id="7653178475449069959" datatype="html">
+        <source>Hero</source>
+        <target>Hero</target>
+      </trans-unit>
+      <trans-unit id="1726363342938046830" datatype="html">
+        <source>About</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="7618512939524538986" datatype="html">
+        <source>Philosophie</source>
+        <target>Philosophy</target>
+      </trans-unit>
+      <trans-unit id="4342625008558026850" datatype="html">
+        <source>Skills</source>
+        <target>Skills</target>
+      </trans-unit>
+      <trans-unit id="2277434019757267974" datatype="html">
+        <source>Projekte</source>
+        <target>Projects</target>
+      </trans-unit>
+      <trans-unit id="5437761980646952729" datatype="html">
+        <source>Kontakte</source>
+        <target>Contact</target>
+      </trans-unit>
       <trans-unit id="3156815350118181541" datatype="html">
         <source>Leistungen</source>
         <target>What I do</target>
