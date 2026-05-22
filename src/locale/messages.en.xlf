@@ -142,6 +142,14 @@
         <source>Vier Bereiche, in denen ich messbaren Mehrwert schaffe.</source>
         <target>Four areas where I deliver measurable value.</target>
       </trans-unit>
+         <trans-unit id="430559382595747445" datatype="html">
+        <source>Methodik</source>
+        <target>Methodology</target>
+      </trans-unit>
+         <trans-unit id="4485525386501768509" datatype="html">
+        <source>Wie ich arbeite</source>
+        <target>How I work</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

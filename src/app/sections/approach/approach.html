@@ -1,0 +1,17 @@
+<section #section>
+  <span class="section-label" i18n>Methodik</span>
+  <h2 i18n>Wie ich arbeite</h2>
+  <div class="approach-grid">
+    @for (phase of phases; track phase.glyph; let i = $index; let last = $last) {
+    <div
+      class="phase-block"
+      [class.phase-block--last]="last"
+      [style.animation-delay]="i * 120 + 'ms'"
+    >
+      <span class="phase-glyph" aria-hidden="true">{{ phase.glyph }}</span>
+      <h3 class="phase-title">{{ phase.title }}</h3>
+      <p class="phase-text">{{ phase.text }}</p>
+    </div>
+    }
+  </div>
+</section>
