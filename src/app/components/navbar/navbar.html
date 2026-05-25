@@ -1,14 +1,16 @@
 <p-toolbar [ngClass]="{ 'navbar-scrolled': scrolled() }">
   <ng-template #start>
-    <img src="logo.png" alt="AK Logo" />
+    <a routerLink="/" aria-label="Home">
+      <img src="logo.png" alt="AK Logo" />
+    </a>
   </ng-template>
   <ng-template #end>
-    <a href="#hero" i18n>Hero</a>
-    <a href="#about" i18n>About</a>
-    <a href="#philosophy" i18n>Philosophie</a>
-    <a href="#services" i18n>Leistungen</a>
-    <a href="#projects" i18n>Projekte</a>
-    <a href="#contact" i18n>Kontakte</a>
+    <a routerLink="/" fragment="hero" i18n>Hero</a>
+    <a routerLink="/" fragment="about" i18n>About</a>
+    <a routerLink="/" fragment="philosophy" i18n>Philosophie</a>
+    <a routerLink="/" fragment="services" i18n>Leistungen</a>
+    <a routerLink="/" fragment="projects" i18n>Projekte</a>
+    <a routerLink="/" fragment="contact" i18n>Kontakte</a>
     <app-lang-switch />
     <app-theme-toggle />
   </ng-template>

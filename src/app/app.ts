@@ -1,20 +1,14 @@
-import { Component, inject, LOCALE_ID } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 import { Navbar } from './components/navbar/navbar';
-import { Hero } from './sections/hero/hero';
-import { About } from './sections/about/about';
-import { Projects } from './sections/projects/projects';
-import { Contact } from './sections/contact/contact';
 import { Footer } from './sections/footer/footer';
-import { Philosophy } from './sections/philosophy/philosophy';
-import { Services } from "./sections/services/services";
-import { Approach } from "./sections/approach/approach";
 
 const BASE_URL = 'https://alexkummerer.de';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Hero, About, Philosophy, Projects, Contact, Footer, Services, Approach],
+  imports: [Navbar, RouterOutlet, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

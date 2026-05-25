@@ -1,12 +1,13 @@
 import { NgClass } from '@angular/common';
 import { Component, afterNextRender, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ThemeToggle } from "../theme-toggle/theme-toggle";
 import { LangSwitch } from "../lang-switch/lang-switch";
 
 @Component({
   selector: 'app-navbar',
-  imports: [ToolbarModule, NgClass, ThemeToggle, LangSwitch],
+  imports: [ToolbarModule, NgClass, RouterLink, ThemeToggle, LangSwitch],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })

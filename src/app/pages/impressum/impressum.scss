@@ -1,0 +1,44 @@
+.legal-page {
+  max-width: 720px;
+  margin: 8rem auto 6rem;
+  padding: 0 1.5rem;
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 2.5rem 0 0.75rem;
+  }
+
+  .lead {
+    color: var(--p-text-muted-color);
+    margin: 0 0 2rem;
+  }
+
+  p,
+  address {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--p-text-color);
+    margin-bottom: 1rem;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  a {
+    color: var(--p-primary-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
