@@ -23,11 +23,10 @@
 
       <p-button
         type="submit"
-        [label]="sent() ? 'Gesendet ✓' : 'Nachricht senden'"
+        [label]="sent() ? labels.sent : labels.send"
         [icon]="sending() ? 'pi pi-spinner pi-spin' : sent() ? 'pi pi-check' : 'pi pi-send'"
         [disabled]="sending()"
         [severity]="sent() ? 'success' : 'primary'"
-        i18n-label
       />
     </form>
 
@@ -55,15 +54,6 @@
         >
           <i class="pi pi-linkedin"></i>
           <span>LinkedIn</span>
-        </a>
-        <a
-          href="https://xing.com/profile/alex_kummerer"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="social-card"
-        >
-          <i class="pi pi-briefcase"></i>
-          <span>Xing</span>
         </a>
       </div>
     </aside>

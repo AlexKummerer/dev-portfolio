@@ -20,6 +20,15 @@ export class Contact {
   private http = inject(HttpClient);
   private messageService = inject(MessageService);
 
+  readonly labels = {
+    send: $localize`:@@contact.button.send:Nachricht senden`,
+    sent: $localize`:@@contact.button.sent:Gesendet ✓`,
+    successSummary: $localize`:@@contact.toast.success.summary:Gesendet`,
+    successDetail: $localize`:@@contact.toast.success.detail:Danke für deine Nachricht!`,
+    errorSummary: $localize`:@@contact.toast.error.summary:Fehler`,
+    errorDetail: $localize`:@@contact.toast.error.detail:Da ist etwas schiefgelaufen.`,
+  };
+
   sending = signal(false);
   sent = signal(false);
   form = this.fb.nonNullable.group({
@@ -45,16 +54,16 @@ export class Contact {
         this.form.reset();
         this.messageService.add({
           severity: 'success',
-          summary: 'Gesendet',
-          detail: 'Danke für deine Nachricht!',
+          summary: this.labels.successSummary,
+          detail: this.labels.successDetail,
         });
       },
       error: () => {
         this.sending.set(false);
         this.messageService.add({
           severity: 'error',
-          summary: 'Fehler',
-          detail: 'Da ist etwas schiefgelaufen.',
+          summary: this.labels.errorSummary,
+          detail: this.labels.errorDetail,
         });
       },
     });

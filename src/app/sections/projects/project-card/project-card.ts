@@ -1,6 +1,11 @@
-import { Component, computed, input } from '@angular/core';
-import { Project } from '../../../data/projects.data';
+import { Component, LOCALE_ID, computed, inject, input } from '@angular/core';
 import { NgClass } from '@angular/common';
+import { Project, ProjectStatus, STATUS_LABELS } from '../../../data/projects.data';
+
+export type ResolvedProject = Omit<Project, 'title' | 'description'> & {
+  title: string;
+  description: string;
+};
 
 @Component({
   selector: 'app-project-card',
@@ -9,14 +14,22 @@ import { NgClass } from '@angular/common';
   styleUrl: './project-card.scss',
 })
 export class ProjectCard {
-  project = input.required<Project>();
+  private locale = inject(LOCALE_ID);
+
+  project = input.required<ResolvedProject>();
+
   statusConfig = computed(() => {
-    const map: Record<string, { label: string; class: string }> = {
-      live: { label: 'Live', class: 'status--live' },
-      'in-development': { label: 'In Entwicklung', class: 'status--dev' },
-      planned: { label: 'Geplant', class: 'status--planned' },
-      'angular-update': { label: 'Angular-Update', class: 'status--update' },
+    const lang = (this.locale as 'de' | 'en') ?? 'de';
+    const classMap: Record<ProjectStatus, string> = {
+      live: 'status--live',
+      'in-development': 'status--dev',
+      planned: 'status--planned',
+      'angular-update': 'status--update',
     };
-    return map[this.project().status];
+    const status = this.project().status;
+    return {
+      label: STATUS_LABELS[status][lang] ?? STATUS_LABELS[status].de,
+      class: classMap[status],
+    };
   });
 }

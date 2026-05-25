@@ -139,6 +139,30 @@
         <source>Wie ich arbeite</source>
         <target>How I work</target>
       </trans-unit>
+      <trans-unit id="contact.button.send" datatype="html">
+        <source>Nachricht senden</source>
+        <target>Send message</target>
+      </trans-unit>
+      <trans-unit id="contact.button.sent" datatype="html">
+        <source>Gesendet ✓</source>
+        <target>Sent ✓</target>
+      </trans-unit>
+      <trans-unit id="contact.toast.success.summary" datatype="html">
+        <source>Gesendet</source>
+        <target>Sent</target>
+      </trans-unit>
+      <trans-unit id="contact.toast.success.detail" datatype="html">
+        <source>Danke für deine Nachricht!</source>
+        <target>Thanks for your message!</target>
+      </trans-unit>
+      <trans-unit id="contact.toast.error.summary" datatype="html">
+        <source>Fehler</source>
+        <target>Error</target>
+      </trans-unit>
+      <trans-unit id="contact.toast.error.detail" datatype="html">
+        <source>Da ist etwas schiefgelaufen.</source>
+        <target>Something went wrong.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
