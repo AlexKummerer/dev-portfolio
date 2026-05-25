@@ -21,6 +21,7 @@ export class Services {
   services = SERVICES.map((s) => ({
     title: s.title[this.locale as 'de' | 'en'] ?? s.title['de'],
     description: s.description[this.locale as 'de' | 'en'] ?? s.description['de'],
+    stack: s.stack,
   }));
 
   constructor() {

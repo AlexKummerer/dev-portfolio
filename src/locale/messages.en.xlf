@@ -90,14 +90,7 @@
         <source>Meine Projekte</source>
         <target>My Projects</target>
       </trans-unit>
-      <trans-unit id="2659914084534380426" datatype="html">
-        <source>Skills &amp; technologien</source>
-        <target>Skills &amp; Technologies</target>
-      </trans-unit>
-      <trans-unit id="8177671297003471289" datatype="html">
-        <source>Weitere Erfahrung </source>
-        <target>More Experience </target>
-      </trans-unit>
+
       <trans-unit id="3628669011020377339" datatype="html">
         <source>Prinzipien </source>
         <target>Principles </target>
@@ -117,10 +110,6 @@
       <trans-unit id="7618512939524538986" datatype="html">
         <source>Philosophie</source>
         <target>Philosophy</target>
-      </trans-unit>
-      <trans-unit id="4342625008558026850" datatype="html">
-        <source>Skills</source>
-        <target>Skills</target>
       </trans-unit>
       <trans-unit id="2277434019757267974" datatype="html">
         <source>Projekte</source>

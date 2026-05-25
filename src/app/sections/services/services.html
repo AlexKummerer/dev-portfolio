@@ -7,6 +7,11 @@
     <div class="service-card" [style.animation-delay]="i * 100 + 'ms'">
       <h3 class="service-title">{{ s.title }}</h3>
       <p class="service-description">{{ s.description }}</p>
+      <ul class="service-stack">
+        @for (tag of s.stack; track tag) {
+        <li class="stack-tag">{{ tag }}</li>
+        }
+      </ul>
     </div>
     }
   </div>

@@ -12,6 +12,12 @@
   border-bottom: 1px solid rgba(148, 163, 184, 0.1);
 }
 
+:host-context(.p-dark) :where(p-toolbar, .p-toolbar) {
+  background: color-mix(in srgb, var(--p-surface-0) 90%, transparent);
+  backdrop-filter: blur(1.25rem) saturate(180%);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
 
 img {
   height: 2.5rem;

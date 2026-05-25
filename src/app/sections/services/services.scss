@@ -74,7 +74,23 @@
   color: var(--p-text-muted-color);
   margin: 12px 0 0;
 }
+.service-stack {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
+.stack-tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 999px;
+  color: var(--p-text-muted-color);
+  font-family: var(--font-mono);
+}
 @keyframes fadeUp {
   to {
     opacity: 1;
